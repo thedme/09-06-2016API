@@ -1,0 +1,8 @@
+package localhost.googlemaps.directions;
+
+import java.io.*;
+import java.net.*;
+
+public class RestRequest {
+	
+}

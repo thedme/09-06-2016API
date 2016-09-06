@@ -1,0 +1,57 @@
+package localhost.googlemaps.directions;
+
+import java.io.*;
+import java.net.*;
+
+
+/**
+ * @author Dovid Eskenazi
+ * @since 2016-09-06
+ *
+ */
+public class RestRequest {
+	/**
+	 * The URL of the API we want to connect to
+	 * 
+	 */
+	
+	protected static String endpoint = "https://maps.googleapis.com/maps/api/directions/";
+	
+	/*
+	 * the character set to use when encoding URL parameters
+	 * 
+	 */
+	
+	protected static String charset = "UTF-8";
+	
+	/*
+	 * 
+	 * API key used for making requests to API
+	 */
+	
+	protected static String key = "AIzaSyDGP5PNMHqUms__GLT_Org_lRAPxe-qIx8";
+	
+	
+	
+	public static void main(String[] args) {
+		
+		try {
+			
+			String origin = "Columbia MD";
+			
+			String destination = "Charlotte NC";
+			
+			String returnType = "json";
+			
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+			// TODO: handle exception
+		} catch (IOException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+	}
+	
+	
+}
